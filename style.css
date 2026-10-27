@@ -1,0 +1,75 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter-container {
+    background: linear-gradient(145deg, #ffffff, #e8ecff);
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+    color: #243b55;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+#count {
+    font-size: 75px;
+    font-weight: bold;
+    color: #6c5ce7;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+button {
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#increase {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+#decrease {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+#reset {
+    background: linear-gradient(135deg, #4776e6, #8e54e9);
+}
+
+button:active {
+    transform: scale(0.97);
+}
